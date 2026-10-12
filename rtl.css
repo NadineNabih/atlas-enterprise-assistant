@@ -1,0 +1,14 @@
+/* Each paragraph picks its own direction from its first strong character,
+   so Arabic renders right-to-left and English left-to-right in the same chat. */
+.message-content p,
+.message-content li,
+.message-content h1,
+.message-content h2,
+.message-content h3,
+.message-content td,
+.message-content th,
+textarea,
+input {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
